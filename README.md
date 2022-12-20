@@ -20,8 +20,8 @@ Repository for Arch Linux build for learning
 
     - Verify networking is working (on VMs they will work most of the time out of the box)
 
-    - Configure NTP
-        ```sh
+    - Configure NTP, set to **true**
+        ```shell
         timedatectl set-ntp true
         ```
 
