@@ -22,9 +22,9 @@ Repository for Arch Linux build for learning
      Configure NTP, set to **true**
 
         ```shell
-            timedatectl set-ntp true
+        timedatectl set-ntp true
 
-            timedatectl set-timezone MST 
+        timedatectl set-timezone MST 
         ```
 
     
