@@ -21,7 +21,7 @@ Repository for Arch Linux build for learning
 
      Configure NTP, set to **true**
 
-        ```sh
+        ```code
         timedatectl set-ntp true
 
         timedatectl set-timezone MST 
