@@ -25,8 +25,25 @@ Configure NTP, set to **true**
 timedatectl set-ntp true
 timedatectl set-timezone MST 
 ```
+
+- Test that network is working
+
+```shell
+ping google.com
+```
+
 ## Creating partition for bootloader
 
+- Use `lsblk` or `fdisk -l` to list the block devices attached to the VM
+
+**BE SURE TO VERIFY WHICH DEVICE YOU ARE TARGETING**
+
+- After verifying which device you'd like to configure, use `cfdisk` to partion it
+
+For this build, I created a new partion /dev/sda1 and gave it 130M, enough for a bootloader.
+```shell
+cfidsk /dev/[device]
+```
 
 
     
